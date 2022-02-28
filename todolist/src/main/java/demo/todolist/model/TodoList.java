@@ -15,7 +15,7 @@ public class TodoList {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nome;
-    @OneToMany(mappedBy = "todoList")
+    @OneToMany(mappedBy = "id")
     private List<TodoListItem> items = new ArrayList<TodoListItem>();
 
     public TodoList() {
